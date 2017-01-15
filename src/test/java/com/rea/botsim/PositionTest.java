@@ -49,9 +49,9 @@ public class PositionTest {
 
         Position position12N = new Position(point12, Direction.NORTH);
 
-        String expected = "1, 2, NORTH";
+        String expected = "1,2,NORTH";
 
-        String unexpected = "2, 4, EAST";
+        String unexpected = "2,4,EAST";
 
         assertEquals(expected, position12N.toString());
 
