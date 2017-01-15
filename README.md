@@ -1,9 +1,3 @@
-#### Classes
-
-- Plane2D
-- Point
-- Position
-- Direction
-- Robot
-- Pilot
+Steps to execute the program
+$ git clone 
 
