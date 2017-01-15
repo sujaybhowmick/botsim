@@ -23,7 +23,7 @@ public class RoboPilot {
 
     private Robot robot;
 
-    private List<String> readInput(String fileName){
+    private List<String> readInput(String fileName) {
         List<String> lines = null;
         try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
 
@@ -41,7 +41,7 @@ public class RoboPilot {
 
         Queue<Command> commandQueue = new LinkedList<>();
 
-        for(String command: commands){
+        for (String command : commands) {
             Command cmd = CommandParser.parseCommand(command);
             commandQueue.add(cmd);
         }
@@ -49,15 +49,15 @@ public class RoboPilot {
         robot = new Robot(context);
     }
 
-    public void start(){
+    public void start() {
         robot.start();
     }
 
-    public void stop(){
+    public void stop() {
         robot.stop();
     }
 
-    public void printInputCommands(){
+    public void printInputCommands() {
         robot.printCommands();
     }
 

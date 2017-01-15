@@ -5,11 +5,12 @@ package com.rea.botsim;
  */
 public class Main {
 
-    public static void main(String args[]){
-        if(args.length == 0){
+    public static void main(String args[]) {
+        if (args.length == 0) {
             System.out.println("Useage: RoboPilot <inputfile>");
             System.exit(1);
         }
+
         RoboPilot roboPilot = new RoboPilot();
         roboPilot.init(args[0]);
         roboPilot.printInputCommands();

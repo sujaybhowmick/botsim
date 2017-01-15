@@ -9,12 +9,12 @@ public interface Command {
 
     void execute(Context context);
 
-    public enum CommandType{
+    public enum CommandType {
         PLACE("PLACE"), MOVE("MOVE"), LEFT("LEFT"), RIGHT("RIGHT"), REPORT("REPORT");
 
         private String commandType;
 
-        CommandType(String commandType){
+        CommandType(String commandType) {
             this.commandType = commandType;
         }
 

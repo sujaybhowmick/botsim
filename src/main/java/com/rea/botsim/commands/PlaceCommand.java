@@ -13,7 +13,7 @@ public class PlaceCommand implements Command {
     public final CommandType commandType = CommandType.PLACE;
     private final String[] parsedArgs;
 
-    public PlaceCommand(String args){
+    public PlaceCommand(String args) {
         this.parsedArgs = parseArgs(args);
     }
 
@@ -21,7 +21,7 @@ public class PlaceCommand implements Command {
 
         String[] parsedArgs = args.split(",");
         String[] sanitizedArgs = new String[parsedArgs.length];
-        for(int i = 0; i < parsedArgs.length; i++){
+        for (int i = 0; i < parsedArgs.length; i++) {
             sanitizedArgs[i] = parsedArgs[i].trim();
         }
         return sanitizedArgs;
@@ -34,9 +34,9 @@ public class PlaceCommand implements Command {
         Direction direction = Direction.valueOf(this.parsedArgs[2]);
         Coordinate origin = new Coordinate(x, y);
         Position position = new Position(origin, direction);
-        if(context.isValidPlacement(origin)){
+        if (context.isValidPlacement(origin)) {
             context.setCurrentPosition(position);
-        }else {
+        } else {
             throw new InvalidPlacementException(String.format("Invalid placement position %s", position));
         }
     }

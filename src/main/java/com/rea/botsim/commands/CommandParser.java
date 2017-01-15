@@ -17,24 +17,24 @@ public class CommandParser {
 
 
     public static Command parseCommand(String command) {
-        if(command != null && PLACE_COMMAND_PATTERN.matcher(command).find()){
+        if (command != null && PLACE_COMMAND_PATTERN.matcher(command).find()) {
             String[] commandParts = command.split(PLACE_COMMAND_STR_PATTERN);
             Command placeCmd = new PlaceCommand(commandParts[1]);
             return placeCmd;
         }
-        if(command != null && MOVE_COMMAND_PATTERN.matcher(command).find()){
+        if (command != null && MOVE_COMMAND_PATTERN.matcher(command).find()) {
             Command moveCmd = new MoveCommand();
             return moveCmd;
         }
-        if(command != null && LEFT_COMMAND_PATTERN.matcher(command).find()){
+        if (command != null && LEFT_COMMAND_PATTERN.matcher(command).find()) {
             Command leftCmd = new LeftCommand();
             return leftCmd;
         }
-        if(command != null && RIGHT_COMMAND_PATTERN.matcher(command).find()){
+        if (command != null && RIGHT_COMMAND_PATTERN.matcher(command).find()) {
             Command rightCmd = new RightCommand();
             return rightCmd;
         }
-        if(command != null && REPORT_COMMAND_PATTERN.matcher(command).find()){
+        if (command != null && REPORT_COMMAND_PATTERN.matcher(command).find()) {
             Command reportCmd = new ReportCommand();
             return reportCmd;
         }

@@ -8,7 +8,7 @@ public enum Direction {
 
     private final String direction;
 
-    Direction(String direction){
+    Direction(String direction) {
         this.direction = direction;
     }
 

@@ -37,7 +37,7 @@ public final class MoveCommand implements Command {
             default:
                 break;
         }
-        if(context.isOnSquareTable(newCoordinate)) {
+        if (context.isOnSquareTable(newCoordinate)) {
             context.setCurrentPosition(new Position(newCoordinate, direction));
         }
     }

@@ -25,7 +25,6 @@ public class PositionTest {
 
         assertNotEquals(position12N.hashCode(), position23S.hashCode());
 
-
     }
 
     @Test

@@ -11,8 +11,7 @@ public final class Position {
 
     private Direction direction;
 
-
-    public Position(Coordinate coordinate, Direction direction){
+    public Position(Coordinate coordinate, Direction direction) {
         this.coordinate = coordinate;
         this.direction = direction;
     }
@@ -29,7 +28,6 @@ public final class Position {
     public String toString() {
         return coordinate.getX() + "," + coordinate.getY() + "," + direction;
     }
-
 
     @Override
     public boolean equals(Object o) {
