@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String args[]) {
         if (args.length == 0) {
-            System.out.println("Useage: RoboPilot <inputfile>");
+            System.out.println("Useage: Main <inputfile>");
             System.exit(1);
         }
 
