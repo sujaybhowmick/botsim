@@ -2,8 +2,6 @@ package com.rea.botsim;
 
 import com.rea.botsim.commands.Command;
 import com.rea.botsim.commands.CommandParser;
-import com.rea.botsim.commands.PlaceCommand;
-import com.rea.botsim.exceptions.InvalidPlacementException;
 import com.rea.botsim.model.Context;
 import com.rea.botsim.model.Coordinate;
 import com.rea.botsim.model.Robot;
