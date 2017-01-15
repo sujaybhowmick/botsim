@@ -36,8 +36,8 @@ public class CommandParser {
             return rightCmd;
         }
         if(command != null && REPORT_COMMAND_PATTERN.matcher(command).find()){
-            Command rightCmd = new ReportCommand();
-            return rightCmd;
+            Command reportCmd = new ReportCommand();
+            return reportCmd;
         }
         throw new CommandParseException("Invalid Command Provided, please provide a valid command");
     }
