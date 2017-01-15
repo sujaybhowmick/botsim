@@ -26,7 +26,6 @@ public class CommandParser {
             Command moveCmd = new MoveCommand();
             return moveCmd;
         }
-
         if(command != null && LEFT_COMMAND_PATTERN.matcher(command).find()){
             Command leftCmd = new LeftCommand();
             return leftCmd;
