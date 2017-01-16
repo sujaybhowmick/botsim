@@ -6,8 +6,12 @@ import com.rea.botsim.model.Direction;
 import com.rea.botsim.model.Position;
 
 /**
- * Created by sbhowmick on 1/15/17.
+ * Author: Sujay Bhowmick
+ * Created Date: 1/15/17
+ * Name: RightCommand.java
+ * Purpose: Robot's Right Command implementation
  */
+
 public class RightCommand implements Command {
     public final CommandType commandType = CommandType.RIGHT;
 

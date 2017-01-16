@@ -3,6 +3,7 @@ package com.rea.botsim.model;
 import com.rea.botsim.commands.Command;
 import com.rea.botsim.commands.CommandParser;
 import com.rea.botsim.commands.PlaceCommand;
+import com.rea.botsim.exceptions.CommandParseException;
 import com.rea.botsim.exceptions.InvalidPlacementException;
 import org.junit.After;
 import org.junit.Before;
@@ -87,11 +88,23 @@ public class RobotTest {
         commands.add("REPORT");
         Context context = createContext(commands);
         try {
-            Robot robot = new Robot(context);
-            robot.start();
-            Position actual = robot.stop();
+           startStopRobot(context);
             fail();
         }catch(Exception e){
+            assertTrue(true);
+        }
+    }
+
+    @Test
+    public void testInvalidCommand() throws Exception {
+        List<String> commands = new ArrayList<>();
+        commands.add("PLACE 1,2,WEST");
+        commands.add("REPORTS");
+        try {
+            Context context = createContext(commands);
+            startStopRobot(context);
+            fail();
+        }catch(CommandParseException e){
             assertTrue(true);
         }
     }
@@ -126,4 +139,9 @@ public class RobotTest {
         return new Context(squareTableTop, commandQueue);
     }
 
+    private void startStopRobot(Context context) {
+        Robot robot = new Robot(context);
+        robot.start();
+        Position actual = robot.stop();
+    }
 }

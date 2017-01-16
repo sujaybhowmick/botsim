@@ -3,8 +3,12 @@ package com.rea.botsim.commands;
 import com.rea.botsim.model.Context;
 
 /**
- * Created by sbhowmick on 1/15/17.
+ * Author: Sujay Bhowmick
+ * Created Date: 1/15/17
+ * Name: Command.java
+ * Purpose: Interface for different Robot Commands
  */
+
 public interface Command {
 
     void execute(Context context);

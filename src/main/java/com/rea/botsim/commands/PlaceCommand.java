@@ -7,8 +7,12 @@ import com.rea.botsim.model.Direction;
 import com.rea.botsim.model.Position;
 
 /**
- * Created by sbhowmick on 1/15/17.
+ * Author: Sujay Bhowmick
+ * Created Date: 1/15/17
+ * Name: PlaceCommand.java
+ * Purpose: Robot's Place Command implementation
  */
+
 public class PlaceCommand implements Command {
     public final CommandType commandType = CommandType.PLACE;
     private final String[] parsedArgs;

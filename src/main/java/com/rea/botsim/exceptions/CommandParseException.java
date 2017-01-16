@@ -1,8 +1,12 @@
 package com.rea.botsim.exceptions;
 
 /**
- * Created by sbhowmick on 1/15/17.
+ * Author: Sujay Bhowmick
+ * Created Date: 1/15/17
+ * Name: CommandParseException.java
+ * Purpose: Runtime Exception class to represent any parsing exception of Robot commands
  */
+
 public class CommandParseException extends RuntimeException {
 
     public CommandParseException() {

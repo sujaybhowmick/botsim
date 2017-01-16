@@ -6,8 +6,12 @@ import com.rea.botsim.model.Direction;
 import com.rea.botsim.model.Position;
 
 /**
- * Created by sbhowmick on 1/15/17.
+ * Author: Sujay Bhowmick
+ * Created Date: 1/15/17
+ * Name: LeftCommand.java
+ * Purpose: Robot's Left Command implementation
  */
+
 public class LeftCommand implements Command {
     public final CommandType commandType = CommandType.LEFT;
 

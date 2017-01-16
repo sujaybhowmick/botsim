@@ -1,8 +1,12 @@
 package com.rea.botsim.exceptions;
 
 /**
- * Created by sbhowmick on 1/15/17.
+ * Author: Sujay Bhowmick
+ * Created Date: 1/15/17
+ * Name: InvalidPlacementException.java
+ * Purpose: Runtime Exception class to represent invalid initial Placement location of the Robot
  */
+
 public class InvalidPlacementException extends RuntimeException {
     public InvalidPlacementException() {
     }

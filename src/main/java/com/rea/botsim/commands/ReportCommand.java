@@ -3,8 +3,12 @@ package com.rea.botsim.commands;
 import com.rea.botsim.model.Context;
 
 /**
- * Created by sbhowmick on 1/15/17.
+ * Author: Sujay Bhowmick
+ * Created Date: 1/15/17
+ * Name: ReportCommand.java
+ * Purpose: Robot's Report Command implementation
  */
+
 public class ReportCommand implements Command {
     public final Command.CommandType commandType = Command.CommandType.REPORT;
 

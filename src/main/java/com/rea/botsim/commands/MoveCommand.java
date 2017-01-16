@@ -6,8 +6,12 @@ import com.rea.botsim.model.Direction;
 import com.rea.botsim.model.Position;
 
 /**
- * Created by sbhowmick on 1/15/17.
+ * Author: Sujay Bhowmick
+ * Created Date: 1/15/17
+ * Name: MoveCommand.java
+ * Purpose: Robot's Move Command implementation
  */
+
 public final class MoveCommand implements Command {
     public final CommandType commandType = CommandType.MOVE;
 
