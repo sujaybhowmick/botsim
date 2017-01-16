@@ -17,8 +17,15 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * Created by sbhowmick on 1/15/17.
+ * Author: Sujay Bhowmick.
+ * Created Date: 1/15/17.
+ * Name: RoboPilot.java
+ * Purpose: Driver class to the Robot Simulation Program. The class encapsulated the reading of input and creating the
+ * command Queue for the Robot Object. The @see init() method prepares the input and command data for the robot object. The
+ * @ see start() method kicks of the Robot to move according to the commands provided as input and @ see stop method
+ * stops the Robot and provides the current position of the Robot.
  */
+
 public class RoboPilot {
 
     private Robot robot;

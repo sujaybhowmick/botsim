@@ -7,8 +7,14 @@ import com.rea.botsim.exceptions.InvalidPlacementException;
 import java.util.Queue;
 
 /**
- * Created by sbhowmick on 1/14/17.
+ * Author: Sujay Bhowmick.
+ * Created Date: 1/14/17.
+ * Name: Robot.java
+ * Purpose: This class represent the Robot. The Robot take the context object as input state. The Robot starts executing
+ * the commands after the @see start() method is invoked and @see stop() method will stop the robot and return its
+ * current position after executing the commands.
  */
+
 public final class Robot {
     private Context context;
 

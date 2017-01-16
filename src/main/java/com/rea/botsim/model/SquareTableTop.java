@@ -1,8 +1,13 @@
 package com.rea.botsim.model;
 
 /**
- * Created by sbhowmick on 1/14/17.
+ * Author: Sujay Bhowmick.
+ * Created Date: 1/14/17.
+ * Name: SquareTableTop.java
+ * Purpose: This class represents the 2D plane on which the Robot is place and commanded to maneuver. This class extends
+ * the Polygon abstract class and provides a concrete implementation of the @see contains(Coordinate p) method.
  */
+
 public class SquareTableTop extends Polygon {
 
     public Coordinate[] vertices = new Coordinate[4];

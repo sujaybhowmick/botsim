@@ -1,8 +1,12 @@
 package com.rea.botsim;
 
 /**
- * Created by sbhowmick on 1/15/17.
+ * Author: Sujay Bhowmick.
+ * Created Date: on 1/15/17.
+ * Name: Main.java
+ * Purpose: Entry point to the Robot Simulation program.
  */
+
 public class Main {
 
     public static void main(String args[]) {

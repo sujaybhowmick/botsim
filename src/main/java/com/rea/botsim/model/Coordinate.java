@@ -1,8 +1,13 @@
 package com.rea.botsim.model;
 
 /**
- * Created by sbhowmick on 1/14/17.
+ * Author: Sujay Bhowmick.
+ * Created Date: 1/14/17.
+ * Name: Coordinate.java
+ * Purpose: This class represents a point in a 2D plane. Two points in a plane are same if their x and y coordinates are
+ * same.
  */
+
 public final class Coordinate {
     private final int x;
 

@@ -3,8 +3,14 @@ package com.rea.botsim.model;
 import java.util.Objects;
 
 /**
- * Created by sbhowmick on 1/14/17.
+ * Author: Sujay Bhowmick.
+ * Created Date: 1/14/17.
+ * Name: Position.java
+ * Purpose: This class encapsulates the concept of location of the Robot at any given point in a plane. Position is
+ * composed of Coordinate and Ordinal Direction. Two Position are equal if they have same Coordinates and
+ * Ordinal Direction
  */
+
 public final class Position {
 
     private final Coordinate coordinate;

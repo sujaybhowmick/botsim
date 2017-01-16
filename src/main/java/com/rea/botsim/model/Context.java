@@ -5,8 +5,12 @@ import com.rea.botsim.commands.Command;
 import java.util.Queue;
 
 /**
- * Created by sbhowmick on 1/14/17.
+ * Author: Sujay Bhowmick.
+ * Created Date: 1/14/17.
+ * Name: Context.java
+ * Purpose: The Context Class provides the context and state of the Robot as it executes the commands provided.
  */
+
 public final class Context {
 
     private final SquareTableTop squareTableTop;
